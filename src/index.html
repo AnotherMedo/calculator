@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="../resources/calculator.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <section class="display">
+        <input type="text" class="input-field" id="calculatorInput" disabled/>
+      </section>
+      <section class="buttons-container">
+        <div class="grid">
+          <div class="functions">
+            <button id="btAc" aria-label="All Clear">AC</button>
+            <button id="btPm" aria-label="Plus Minus">&pm;</button>
+            <button id="btPc" aria-label="Percentage">%</button>
+          </div>
+          <div class="numbers">
+            <button id="bt7">7</button>
+            <button id="bt8">8</button>
+            <button id="bt9">9</button>
+            <button id="bt4">4</button>
+            <button id="bt5">5</button>
+            <button id="bt6">6</button>
+            <button id="bt1">1</button>
+            <button id="bt2">2</button>
+            <button id="bt3">3</button>
+            <button id="bt0" class="zero">0</button>
+            <button id="btDot">.</button>
+          </div>
+        </div>
+        <div class="operations">
+          <button id="btDiv" aria-label="Divide">&divide;</button>
+          <button id="btTimes" aria-label="Multiply">&times</button>
+          <button id="btMin" aria-label="Subtract">-</button>
+          <button id="btPlus" aria-label="Add">+</button>
+          <button id="btEq" aria-label="Equals">=</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

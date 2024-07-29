@@ -1,0 +1,124 @@
+:root {
+  --gap: 7px;
+  --light-grey: #d4d4d2;
+  --black: #1c1c1c;
+  --dark-grey: #505050;
+  --orange: #ff9500;
+  --gradient: linear-gradient(
+    56deg,
+    var(--light-grey) 0%,
+    var(--dark-grey) 100%
+  );
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: var(--gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calculator-container {
+  gap: var(--gap);
+  display: grid;
+  border-radius: 2.5rem;
+  background-color: var(--black);
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: var(--gap);
+}
+
+button,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+button {
+  height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.operations button.active {
+  background-color: white;
+  color: var(--orange);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.functions {
+  gap: var(--gap);
+  display: flex;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.functions button {
+  background-color: var(--light-grey);
+}
+
+.numbers button {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+#bt0 {
+  grid-column: span 2;
+  width: 150px;
+  border-radius: 2.5rem;
+  text-align: 2px;
+}
+
+.operations button {
+  background-color: var(--orange);
+  color: white;
+}
+
+.input-field {
+  width: 268px;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--black);
+  color: white;
+  text-align: right;
+  font-size: 50px;
+  cursor:default;
+}
+
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+  display: none;
+}
